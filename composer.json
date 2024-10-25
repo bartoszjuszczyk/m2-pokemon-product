@@ -1,0 +1,22 @@
+{
+  "name": "juszczyk/module-pokemon-product",
+  "version": "1.0.0",
+  "description": "N/A",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*",
+    "magento/module-catalog": "104.0.*",
+    "magento/module-catalog-import-export": "101.1.*"
+  },
+  "license": [
+    "Proprietary"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Juszczyk\\PokemonProduct\\": ""
+    }
+  }
+}
