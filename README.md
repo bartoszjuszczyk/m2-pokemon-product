@@ -35,3 +35,5 @@ Default values for this configuration is:
 ## Additional information
 
 The Juszczyk_PokemonProduct module integrate Magneto with PokeAPI.
+
+It can display Pokemon name and image based on product attribute called "Pokemon Name". Name and image are from PokeAPI.
