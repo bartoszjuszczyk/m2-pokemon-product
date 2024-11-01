@@ -10,7 +10,7 @@
         "magento/module-catalog-import-export": "101.1.*"
     },
     "license": [
-        "Proprietary"
+        "proprietary"
     ],
     "autoload": {
         "files": [
