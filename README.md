@@ -11,7 +11,7 @@ uninstall this module and changes will be reverted.
 We recommend install this module with Composer:
 
 ```
-composer require juszczyk/pokemon-product
+composer require juszczyk/module-pokemon-product
 bin/magento module:enable Juszczyk_PokemonProduct
 bin/magento setup:upgrade
 bin/magento setup:static-content:deploy (if applicable)
