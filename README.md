@@ -1,35 +1,39 @@
 # Juszczyk_PokemonProduct module
 
-<font color='red'>**The following example is a complete README for a module Magento_Default:** </font>
-# Magento_Default module
-The Magento_Default module enables you to add the Configurable Product updates to the existing store campaigns.
-
-The Magento_Default module is a part of the staging functionality in Magento EE. The module adds the “Configurations” tab and the configuration wizard to the Schedule Update form of a product. You can change the Configurable Product attributes in campaigns. These updates are shown on the campaign dashboard.
+The Juszczyk_PokemonProduct module enables you to dynamically add Pokemon name and image to product on
+listing and view page based on attribute assigned to product.
 
 ## Installation details
 
-The Magento_Default module makes irreversible changes in a database during installation. You cannot disable or uninstall this module.
+The Juszczyk_PokemonProduct module makes reversible changes in database during installation. You can disable or
+uninstall this module and changes will be reverted.
 
-For information about a module installation in Magento 2, see [Enable or disable modules](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html).
+We recommend install this module with Composer:
 
-## Extensibility
+```
+composer require juszczyk/pokemon-product
+bin/magento module:enable Juszczyk_PokemonProduct
+bin/magento setup:upgrade
+bin/magento setup:static-content:deploy (if applicable)
+```
 
-Extension developers can interact with the Magento_Default module. For more information about the Magento extension mechanism, see [Magento plug-ins](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html).
+For information about a module installation in Magento 2,
+see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
 
-[The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the Magento_Default module.
+## Configuration
 
-### Layouts
+The Juszczyk_PokemonProducts provides configuration possibility at backend panel. After module install there will be the
+tab named "Juszczyk" and the section named "Pokemon Product".
 
-The module introduces layout handles in the `view/adminhtml/layout` directory.
+In group "General" you can choose if module should be enabled and/or change PokeAPI base URL.
 
-For more information about a layout in Magento 2, see the [Layout documentation](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-overview.html).
+Default values for this configuration is:
 
-### UI components
-
-You can extend product and category updates using the UI components located in the `view/adminhtml/ui_component` directory.
-
-For information about a UI component in Magento 2, see [Overview of UI components](https://devdocs.magento.com/guides/v2.4/ui_comp_guide/bk-ui_comps.html).
+- Module is disabled
+- PokeAPI base URL is: `https://pokeapi.co/api/v2`
 
 ## Additional information
 
-For information about significant changes in patch releases, see [Release information](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html).
+The Juszczyk_PokemonProduct module integrate Magneto with PokeAPI.
+
+It can display Pokemon name and image based on product attribute called "Pokemon Name". Name and image are from PokeAPI.

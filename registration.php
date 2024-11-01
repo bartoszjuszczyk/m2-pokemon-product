@@ -1,10 +1,10 @@
 <?php
-/*
+/**
  * File: registration.php
  *
  * @author Bartosz Juszczyk <b.juszczyk@bjuszczyk.pl>
  * @copyright Copyright (c) 2024.
- */
+ **/
 
 use Magento\Framework\Component\ComponentRegistrar;
 
